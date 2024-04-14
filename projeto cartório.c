@@ -241,15 +241,12 @@ int main() // função principal do sistema
         printf("\t1 - Adicionar Nome\n");
         printf("\t2 - Consultar Nome\n");
         printf("\t3 - Deletar Nome\n");
+        printf("\t4 - Sair\n");
         printf("\nOpção:");
         
         scanf("%d", &opcao);
         
         system("cls");
-        
-        if (opcao==4){
-           break;
-        }
         
         // sistema de escolha das opções do sistema
         
@@ -262,6 +259,11 @@ int main() // função principal do sistema
                 break;
             case 3:
                 deletar();
+                break;
+            case 4:
+                printf("Saindo do programa!\n");
+                system("pause");
+                return 0;
                 break;
             default:
                 printf("Opção selecionada nao disponível!\n");
